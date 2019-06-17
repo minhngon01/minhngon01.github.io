@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đặng Minh Ngôn</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<section class="container-fluid">
+		<section class="row justify-content-center"> 
+			<section class="col-12 col-sm-6 col-md-3">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOsFZNGZtDNmkVJtr6b0i5AsPIim7hx_G14P7ssN6g7XRDLz8Z" 
+				class="bg">
+
+				<form class="form-container">
+						<div class="inner-addon left-addon form-group need-margin">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<input class="form-control" type="text"  id="username" name="username" required placeholder="Username"/>
+						</div>
+
+						<div class="left-addon inner-addon form-group">
+							<i class="fa fa-key" aria-hidden="true"></i>
+							<input class="form-control" type="password" id= "password" name="password" required placeholder="*********"/>
+						</div>
+
+						<input type="button" value="LOGIN" class="button btn btn-primary btn-block" onClick="validate();" />
+						<div class=" form-group form-check">
+	                    	<div class="left">
+								<label>
+						      		 <input type="checkbox" class="form-check-input" checked="no">Remember me
+							    </label>
+				
+							</div>
+							<div class="right">
+								<a href="#" style="color:black"><i>Forgot Password?</i></a>
+							</div>
+						</div>
+				</form>
+			</section>
+		</section>
+	</section>
+
+	<script type="text/javascript">
+		function validate()
+		{
+		    if(   document.getElementById("username").value == "vexere"
+		       && document.getElementById("password").value == "vxr2019" )
+		    {
+		        location.href = "cv.html"
+		    }
+		    else
+		    {
+		        alert( "Validation failed" );
+		    }
+		}
+	</script>
+</body>
+
+
+</html>

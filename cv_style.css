@@ -1,0 +1,50 @@
+	body {
+		background-color:#FFF;
+		padding:2em;
+		margin:1em auto;
+		border:2px solid #000;
+		max-width: 50em;
+		width:100%
+	}
+	#address{
+		border-top:3px double #000;
+		text-align: center;
+		padding-top:2.5em;
+	}
+	#contact{
+		text-align:center;
+		margin-top:5px;
+	}
+	.date {
+		float:left;
+		font-size:1em;
+		margin:0 0 0 -16em;
+		text-align:right;
+	}
+	abbr, acronym{
+		border-bottom:1px dotted #333;
+		cursor:help;
+	}	
+	address{
+		font-style:italic;
+		color:#333;
+		font-size:.9em;
+	}
+	.content{
+		width:32em;
+		margin:-1em 0 0 3em;
+	}	
+	.section{
+		margin: 0;
+		padding:5px; 0;
+	}
+	ul{
+		padding-left:.5em;
+		margin-left:.5em;
+	}
+	h2 {
+		font-size:1.3em;
+		font-variant: small-caps;
+		letter-spacing: .06em;
+		border-bottom:1px solid #000;
+	}
