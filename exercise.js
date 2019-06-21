@@ -1,4 +1,10 @@
-function q1_Chemistry(str){
+function myFunction(name) {
+  return name;
+}
+
+function q1_Chemistry(){
+    var str = document.getElementById("ex1-input").value;
+    var output = document.getElementById("ex1-output");
     var stack =[], temp = 0;
     for ( i = 0; i < str.length; i++){
         if (str[i] ==="C") stack.push(12);
@@ -26,14 +32,15 @@ function q1_Chemistry(str){
     for ( i = 0; i < stack.length; i++){
         sum += stack[i];
     }
-    console.log(sum);
-
+    output.value = sum;
 }
 
-function q2_SeeAndSay(num) {
+function q2_SeeAndSay() {
+    var num = document.getElementById("ex2-input").value;
+    var output = document.getElementById("ex2-output");
     num = num.toString();
     let len = num.length;
-    let output = '';
+    let result = '';
     let count = 1;
     
     for(var i=0; i<len; i++){
@@ -41,14 +48,16 @@ function q2_SeeAndSay(num) {
       if(current === num[i+1]) {
         count++;
       } else {
-        output += count + current;
+        result += count + current;
         count = 1; 
       }
     }
-    return parseInt(output);
+    output.value = result;
 }
 
-function q3_RoundNumber(num){
+function q3_RoundNumber(){
+    var num = document.getElementById("ex3-input").value;
+    var output = document.getElementById("ex3-output");
     let previous = 0, temp = 0, count = 1;
     
     while(parseInt(num/10) != 0) {
@@ -59,10 +68,12 @@ function q3_RoundNumber(num){
       count *=10;
     }
     console.log(parseInt(num));
-    return ((parseInt(num) + previous)*count);
+    output.value = (parseInt(num) + previous)*count;
 }
 
-function q4_thuannghich(str){
+function q4_thuannghich(){
+    var str = document.getElementById("ex4-input").value;
+    var output = document.getElementById("ex4-output");
     var newNum, a = [], count = 0;
     for (i=0; i < str.length; i++){
         if (str[i].toUpperCase() === "A" || str[i].toUpperCase()=== "B" || str[i].toUpperCase()=== "C") newNum = 2;
@@ -82,9 +93,9 @@ function q4_thuannghich(str){
         else
             count -= 100;
     }
-    if (count === Math.floor(k/2) || count === Math.floor(k/2) + 1) console.log("YES");
-    else console.log("NO");
-}
+
+    if (count === Math.floor(k/2) || count === Math.floor(k/2) + 1) output.value = "YES" ;
+    else output.value = "NO";
 
 function q5_SadValentine(row, column, data){
     console.log(data);

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+  	<link rel="stylesheet" type="text/css" href="./styles/js_exercise.css">
+  	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  	<title>JavaScript Exercise</title>
+	
+	
+</head>
+
+<body>
+  <script src="exercise.js"></script>
+  	<div class="">
+  		<div>
+		  	<div id="address">
+				<i>271/34 TRINH DINH TRONG STREET, TAN PHU DISTRICT, HO CHI MINH CITY</i>
+			</div>
+			<div id="contact">
+				<i>093-153-6430 • MINHNGON01@EMAIL.COM</i>
+			</div>
+
+			<h1 style="text-align: center"> <i>ĐẶNG MINH NGÔN</i>	</h1>
+		</div>
+	 	<div class="row exercise">
+	 		<div class="panel-group" id="accordion">
+
+			  <div class="panel panel-default">			  	
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+			        <b>Bài 1: Nguyên tố hóa học</b></a>
+			      </h4>
+			    </div>
+			    <div id="collapse1" class="panel-collapse collapse">
+			      <div class="panel-body">
+			      	<div>
+			      		<p> Hóa chất chỉ gồm các nguyên tố C, H, O có trọng lượng 12, 1, 16 tương ứng</p>
+			      		<p>Nó được biểu diễn dạng "nén", ví dụ COOHHH là CO2H3 hay CH (CO2H) (CO2H) (CO2H) là CH(CO2H)3.
+						Nếu ở dạng nén thì số lần lặp >=2 và <=9.</p>
+						<p>Tính khối lượng hóa chất</p>
+						<p>Input </p>
+						<p class="indent-text"> Gồm một dòng mô tả hóa chất không quá 100 kí tự chỉ gồm C, H, O, (, ), 2,..,9.</p>
+						<p>Output </p>
+						<p class="indent-text"> Khối lượng của hóa chất (luôn <=10000).</p>
+						<p>VD:</p>
+						<table style="width:100%">
+						  <tr>
+						    <th>Input</th>
+						    <th>Output</th> 
+					
+						  </tr>
+						  <tr>
+						    <td>COOH</td>
+						    <td>45</td>						
+						  </tr>
+						  <tr>
+						    <td>CH(CO2H)3</td>
+						    <td>148</td> 
+						  </tr>
+						  <tr>
+						  	<td>((CH)2(OH2H)(C(H))O)3</td>
+						    <td>222</td>
+						  </tr>
+						</table>
+			      	</div>
+					
+					<form onSubmit= "q1_Chemistry()">
+				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex1-input"></textarea>
+	  					<br>
+	  					<input  type="submit">
+  					</form>
+  						
+  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex1-output"></textarea>
+
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+			        <b>Bài 2: Nhìn và đọc</b></a>
+			      </h4>
+			    </div>
+			    <div id="collapse2" class="panel-collapse collapse">
+			      <div class="panel-body">
+			      	<p>Phép biến đổi "nhìn và đọc" được định nghĩa như sau:</p>
+			      	<p>Bắt đầu từ số ở đầu tiên X. Với các số giống nhau thì nhóm lại thành một dãy (giả sử có Y số) thì dãy này được chuyển thành YX.</p>
+			      	<p> Ví dụ 122344111 đọc là "một 1, hai 2, một 3, hai 4, ba 1", do đó chuỗi 122344111 chuyển thành
+					1122132431.</p>
+			      	<p>Input</p>
+			      	<p class="indent-text">Dòng đầu chứa số bộ test:</p>
+			      	<p class="indent-text">Mỗi dòng sau chứa 1 bộ test chứa chuỗi cần biến đổi (không quá 1000 chữ số)</p>
+			      	<p>Output</p>
+			      	<p class="indent-text">Với mỗi bộ test, in ra kết quả phép biến đổi</p>
+			      	<p>VD:</p>
+			      	<table style="width:100%">
+						  <tr>
+						    <th>Input</th>
+						    <th>Output</th> 
+					
+						  </tr>
+						  <tr>
+						    <td>122344111</td>
+						    <td>1122132431</td>						
+						  </tr>
+						  <tr>
+						    <td>1111111111</td>
+						    <td>101</td> 
+						  </tr>
+						  <tr>
+						  	<td>12345</td>
+						    <td>1112131415</td>
+						  </tr>
+					</table>
+					<form onSubmit= "q2_SeeAndSay()">
+				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex2-input"></textarea>
+	  					<br>
+	  					<input  type="submit">
+  					</form>
+  						
+  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex2-output"></textarea>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+			        <b>Bài 3: Làm tròn số</b></a>
+			      </h4>
+			    </div>
+			    <div id="collapse3" class="panel-collapse collapse">
+			      <div class="panel-body">
+			     	<p>Cho trước một số nguyên, người ta sẽ làm tròn số này theo quy tắc sau:</p>
+			     	<ul>
+			     		<li>Nếu số đó lớn hơn 10 thì sẽ được làm tròn đến số hàng chục gần nhất</li>
+			     		<li>Sau đó nếu kết quả lớn hơn 100 thì làm tròn đến số hàng trăm gần nhất</li>
+			     		<li>Sau đó nếu kết quả lớn hơn 1000 thì làm tròn đến số hàng nghìn gần nhất</li>
+			     		<li>…cứ tiếp tục như vậy …</li>
+			     	</ul>
+			     	<p>Chú ý: giá trị 5 được làm tròn lên.</p>
+			     	<p>Hãy viết chương trình làm tròn số theo quy tắc trên.</p>
+			     	<p>Input</p>
+			     	<p class="indent-text">Dòng đầu tiên chứa số n là số bộ test (không quá 100).</p>
+			     	<p class="indent-text">• n dòng tiếp theo, mỗi dòng ghi một số nguyên x với 0 <= x <= 99999999.</p>
+			     	<p>Output</p>
+			     	<p class="indent-text">Với mỗi bộ test, in ra màn hình trên một dòng kết quả của phép làm tròn.</p>
+			      	<p>VD:</p>
+			      	<table style="width:100%">
+						  <tr>
+						    <th>Input</th>
+						    <th>Output</th> 
+					
+						  </tr>
+						  <tr>
+						    <td>15</td>
+						    <td>20</td>						
+						  </tr>
+						  <tr>
+						    <td>14</td>
+						    <td>10</td> 
+						  </tr>
+						  <tr>
+						  	<td>12345678</td>
+						    <td>10000000</td>
+						  </tr>
+					</table>
+					<form onSubmit= "q3_RoundNumber()">
+				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex3-input"></textarea>
+	  					<br>
+	  					<input type="submit">
+  					</form>		
+  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex3-output"></textarea>
+
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+			        <b>Bài 4: Số thuận nghịch</b></a>
+			      </h4>
+			    </div>
+			    <div id="collapse4" class="panel-collapse collapse">
+			      <div class="panel-body">
+			      	<p>Ngày nay, việc sử dụng bàn phím điện thoại di động để nhấn các số đã trở thành một việc rất quen thuộc với các bạn sinh viên. Ai cũng biết các phím số trên điện thoại cũng là các phím dùng để nhấn các chữ cái:</p>
+			      	<p class = "indent-text">2: ABC, 3: DEF, 4: GHI, 5: JKL, 6: MNO, 7: PQRS, 8: TUV, 9: WXYZ</p>
+			      	<p>Nam viết ra giấy một dãy ký tự và đố Bình xác định đó là dãy số nào theo cách nhấn số trên điện thoại (chỉxem xét sự tương ứng giữa số và ký tự chứ không xem xét phải nhấn bao nhiêu lần phím đó, ví dụ cả A, B, C đều là một số 2).</p>
+			      	<p> Bình rất nhanh chóng xác định được kết quả, không những thế Bình còn muốn xác định nhanh xem số đócó phải là số dạng thuận nghịch hay không. Một số là thuận nghịch nếu viết theo thứ tự ngược lại cũng là chính nó. Hãy viết chương trình giúp Bình thực hiện công việc trên.</p>
+			      	<p>Input</p>
+			      	<p class="indent-text">Dòng đầu tiên chứa số n là số bộ test (không quá 1000).</p>
+			      	<p class="indent-text">Mỗi bộ test viết trên một dòng một dãy ký tự gồm các chữ cái có thể là chữ hoa hoặc chữ thường, dài không quá 20 ký tự, không có khoảng trống.)</p>
+			      	<p>Output</p>
+			      	<p class="indent-text">Với mỗi bộ test, in ra màn hình, trên một dòng, chữ “YES” nếu đó tương ứng là số thuận nghịch, chữ “NO” nếu ngược lại.i</p>
+			      	<p>VD:</p>
+			      	<table style="width:100%">
+						  <tr>
+						    <th>Input</th>
+						    <th>Output</th> 
+					
+						  </tr>
+						  <tr>
+						    <td>ANBOBNA</td>
+						    <td>YES</td>						
+						  </tr>
+						  <tr>
+						    <td>iAmACoolCompany</td>
+						    <td>NO</td> 
+						  </tr>
+					</table>
+					<form onSubmit= "q4_thuannghich()">
+				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex4-input"></textarea>
+	  					<br>
+	  					<input  type="submit">
+  					</form>
+  						
+  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex4-output"></textarea>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+			        <b>Bài 5: Đàn kiến</b></a>
+			      </h4>
+			    </div>
+			    <div id="collapse5" class="panel-collapse collapse">
+			      <div class="panel-body">
+			      	<p>Ngày Valentine, Tí mua socola đem đi tỏ tỉnh với người yêu, nhưng đáng tiếc đã bị bạn nữ kia từ chối. Đành rằng đã mua thì phải ăn, Tí mang về nhà ăn một mình. Để thử hương vị lạ, Tí ăn cùng với cả dâu tây, Tí để vài miếng dâu tây lên thanh socola rồi sẵn thế mà chén.</p>
+			      	<p> Đang chuẩn bị thưởng thức thì Tí nhận được điện thoại từ Tèo, Tèo rủ Tí sang uống rượu giải sầu vì lí do thất tình tương tự. Tí chạy sang luôn, quên mất thanh socola còn đang dang dở trên bàn</p>
+			      	<p>Đàn kiến nhà Tí tha hồ được bữa. Chúng càn quét theo từng hàng hoặc từng cột một. Nhưng không hiểu sao bọn chúng bị dị ứng với mùi của dâu tây, chúng sẽ không “tấn công” những hàng hoặc cột nào có miếng dâu tây,còn đâu là chúng chén sạch!</p>
+			      	<p>Các bạn hãy tính toán xem số lượng miếng số socola lũ kiến sẽ ăn được là bao nhiêu?</p>
+			      	<p>Input</p>
+			      	<p class="indent-text">Dòng đầu tiên gồm 2 số r và c (2 <= r, c <= 10) là số hàng và số cột của thanh socola.</p>
+			      	<p class="indent-text">r dòng tiếp theo, mỗi dòng gồm c kí tự, kí tự ‘.’ biểu diễn 1 miếng socola bình thường, kí tự ‘S’ biểu diễn miếng socola có miếng dâu tây.</p>
+			      	<p>Output</p>
+			      	<p class="indent-text">In ra số lượng miếng socola nhiều nhất mà đàn kiến có thể ăn được.</p>
+			      	<p>VD:</p>
+			      	<table style="width:100%">
+						  <tr>
+						    <th>Input</th>
+						    <th>Output</th> 
+					
+						  </tr>
+						  <tr>
+						    <td>3                4
+						    <p>S...</p>
+						    <p>....</p>
+							<p>..S.</p></td></td>
+						    <td valign="top">8</td>						
+						  </tr>
+					
+					</table>
+					<p> Hình vẽ giải thích test </p>
+					<img src="5.jpg">
+					<form onSubmit= "q5_SadValentine()">
+				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex5-input"></textarea>
+	  					<br>
+	  					<input  type="submit">
+  					</form>
+  						
+  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex5-output"></textarea>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+			        <b>Bài 6: Chia kẹo</b></a>
+			      </h4>
+			    </div>
+			    <div id="collapse6" class="panel-collapse collapse">
+			      <div class="panel-body">
+			      	<p>Đi chợ về, mẹ mua một gói kẹo cho anh em Tèo. Mẹ bảo Tèo rằng đợi các em đi học về thì hãy chia, nhưng Tèo không nghe, cứ đòi ăn trước. Tèo chia đều kẹo cho tất cả anh em, nếu như chia không đều thì các phần nhiều hơn (nhiều hơn các phần còn lại 1 cái) sẽ dành cho những đứa bé hơn.</p>
+			      	<p>Là anh cả nên Tèo chỉ lấy phần nhỏ nhất.Khi lũ trẻ đi học về, chúng nhận phần của mình, nhưng nghi ngờ anh Tèo là người lấy phần nhiều nhất, vì vậy chúng đem đi hỏi mẹ xem gói kẹo ban đầu có tất cả bao nhiêu cái?</p>
+			      	<p> Các bạn hãy tính toán xem số lượng kẹo có thể có ban đầu nhỏ nhất và lớn nhất là bao nhiêu?</p>
+			      	<p>Input</p>
+			      	<p class="indent-text">Gồm 2 số nguyên n (2 <= n <= 15) và k (n <= k <= 100) lần lượt là những đứa trẻ trong gia đình của Tèo và số kẹo còn lại sau khi Tèo đã ăn hết phần của mình.</p>
+			      	<p>Output</p>
+			      	<p class="indent-text">In ra 2 giá trị số kẹo nhỏ nhất và lớn nhất có thể có ban đầu.</p>
+			      	<p>VD:</p>
+			      	<table style="width:100%">
+						  <tr>
+						    <th>Input</th>
+						    <th>Output</th> 
+					
+						  </tr>
+						  <tr>
+						    <td>2 5</td>
+						    <td>9 10</td>						
+						  </tr>
+						  <tr>
+						    <td>3 5</td>
+						    <td>7 7</td> 
+						  </tr>
+					</table>
+					<form onSubmit= "q4_thuannghich()">
+				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex4-input"></textarea>
+	  					<br>
+	  					<input  type="submit">
+  					</form>
+  						
+  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex4-output"></textarea>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			</div>
+
+			
+
+ 		</div>
+ 	</div>
+</body>
+</html>
