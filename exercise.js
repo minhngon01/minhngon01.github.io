@@ -1,7 +1,3 @@
-function myFunction(name) {
-  return name;
-}
-
 function q1_Chemistry(){
     var str = document.getElementById("ex1-input").value;
     var output = document.getElementById("ex1-output");
@@ -33,12 +29,13 @@ function q1_Chemistry(){
         sum += stack[i];
     }
     output.value = sum;
+    return output.value;
 }
 
 function q2_SeeAndSay() {
     var num = document.getElementById("ex2-input").value;
     var output = document.getElementById("ex2-output");
-    num = num.toString();
+    num.toString();
     let len = num.length;
     let result = '';
     let count = 1;
@@ -65,7 +62,7 @@ function q3_RoundNumber(){
       if (temp >= 5) previous = 1;
       else previous = 0;
       console.log(parseInt(num/=10));
-      count *=10;
+      count*=10;
     }
     console.log(parseInt(num));
     output.value = (parseInt(num) + previous)*count;
@@ -96,7 +93,7 @@ function q4_thuannghich(){
 
     if (count === Math.floor(k/2) || count === Math.floor(k/2) + 1) output.value = "YES" ;
     else output.value = "NO";
-
+}
 function q5_SadValentine(row, column, data){
     console.log(data);
     //X Row
@@ -113,59 +110,72 @@ function q5_SadValentine(row, column, data){
 
     
     //O Column
-    for(j=0; j<column; j++){
-        
-        for(i=0; i < row; i++){
-            var count = 0;
-            if(data[i][j] === 'S')
-                count++;
-        }
-        if (count == 0){
-            // Turn column into O
-            for(k=0; k < row; k++){
-                data[k][j] = 'O';
-            }
-        }
-    }
+
     console.log(data);
 }
 
-function q6_TeosCandy(numCandy,remainCandy){
-    if (remainCandy % (numCandy-1) == 0)
-        console.log(numCandy*(remainCandy/(numCandy-1))-1 + " " +(numCandy*(remainCandy/(numCandy-1))))
+function q6_TeosCandy(numPeople,remainCandy){
+    var input = document.getElementById("ex6-input");
+    var array = input.value.split(" ");
+    var output = document.getElementById("ex6-output");
+    var numPeople = array[0];
+    var remainCandy = array[1];
+    if (remainCandy % (numPeople-1) == 0)
+        output.value = (numPeople*(remainCandy/(numPeople-1))-1 + " " +(numPeople*(remainCandy/(numPeople-1))))
     else 
-        console.log(Math.floor(remainCandy + (remainCandy/(numCandy-1))) + " " + Math.floor(remainCandy + (remainCandy/(numCandy-1))))
+        output.value = Math.floor(remainCandy + (remainCandy/(numPeople-1))) + " " + Math.floor(remainCandy + (remainCandy/(numPeople-1)))
 }
 
 function q7_loopChar(num, str){
+    var input = document.getElementById("ex7-input");
+    var array = input.value.split(" ");
+    var num = array[0];
+    var str = array[1];
+    var output = document.getElementById("ex7-output");
     a= ""
     for (i = 0; i < str.length; i++){
         a += str[i].repeat(num);
     }
-    return a;
+    output.value = a;
 }
 
 function q8_CountCow(num){
-    var str = "moo", i = 0;
+    var num = document.getElementById("ex8-input").value;
+    var output = document.getElementById("ex8-output");
+    var str = "moo", i = 3;
     while (str.length < num){
         var middle = "m"
-        i+=3;
         middle = middle + "o".repeat(i);
         str = str + middle + str;
+        i++;
     }
-    console.log(str[num-1]);
+    output.value = str[num-1];
 }
 
 function q9_NearPrime(num){
+    var num = document.getElementById("ex9-input").value;
+    var output = document.getElementById("ex9-output");
     let count = 0;
     for (i=2; i <= num; i++){
         if (num%i==0)
             count++;
     }
-    if (count === 2 ) console.log("YES");
-    else console.log("NO"); 
+    if (count === 2 ) output.value = "YES";
+    else output.value = "NO"; 
 }
 
-function q10_UrsaDota(num){
-    console.log((num * (num + 1)) / 2)  ;
+function ursaDamage(n){
+    return (n*(n+1)/2);
+}
+
+
+function q10_UrsaDota(){
+    var hp = document.getElementById("ex10-input").value;
+    var output = document.getElementById("ex10-output");
+    let damage = 0, count=1;
+    while(damage < hp){
+        damage = ursaDamage(count);
+        count++;
+    }
+    output.value = count -1;
 }

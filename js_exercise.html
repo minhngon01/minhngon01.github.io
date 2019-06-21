@@ -34,6 +34,7 @@
 	 	<div class="row exercise">
 	 		<div class="panel-group" id="accordion">
 
+			  <!--1-->
 			  <div class="panel panel-default">			  	
 			    <div class="panel-heading">
 			      <h4 class="panel-title">
@@ -74,18 +75,19 @@
 						</table>
 			      	</div>
 					
-					<form onSubmit= "q1_Chemistry()">
-				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex1-input"></textarea>
+					<form>
+				      	<textarea autocomplete=off class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex1-input"></textarea>
 	  					<br>
-	  					<input  type="submit">
+	  					<button onClick= "q1_Chemistry()"  type="button">Proces</button>
   					</form>
   						
-  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex1-output"></textarea>
+  						<textarea autocomplete=off disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex1-output"></textarea>
 
 			      </div>
 			    </div>
 			  </div>
-
+			
+			  <!--2-->
 			  <div class="panel panel-default">
 			    <div class="panel-heading">
 			      <h4 class="panel-title">
@@ -124,17 +126,18 @@
 						    <td>1112131415</td>
 						  </tr>
 					</table>
-					<form onSubmit= "q2_SeeAndSay()">
-				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex2-input"></textarea>
+					<form>
+				      	<textarea autocomplete=off class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex2-input"></textarea>
 	  					<br>
-	  					<input  type="submit">
+	  					<button onClick= "q2_SeeAndSay()" type="button">Proces</button>
   					</form>
   						
-  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex2-output"></textarea>
+  						<textarea autocomplete=off disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex2-output"></textarea>
 			      </div>
 			    </div>
 			  </div>
 
+			  <!--3-->
 			  <div class="panel panel-default">
 			    <div class="panel-heading">
 			      <h4 class="panel-title">
@@ -178,17 +181,18 @@
 						    <td>10000000</td>
 						  </tr>
 					</table>
-					<form onSubmit= "q3_RoundNumber()">
-				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex3-input"></textarea>
+					<form>
+				      	<textarea autocomplete=off class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex3-input"></textarea>
 	  					<br>
-	  					<input type="submit">
+	  					<button  onClick= "q3_RoundNumber()" type="button">Proces</button>
   					</form>		
-  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex3-output"></textarea>
+  						<textarea autocomplete=off disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex3-output"></textarea>
 
 			      </div>
 			    </div>
 			  </div>
 
+			  <!--4-->
 			  <div class="panel panel-default">
 			    <div class="panel-heading">
 			      <h4 class="panel-title">
@@ -223,17 +227,17 @@
 						    <td>NO</td> 
 						  </tr>
 					</table>
-					<form onSubmit= "q4_thuannghich()">
-				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex4-input"></textarea>
+					<form>
+				      	<textarea autocomplete=off class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex4-input"></textarea>
 	  					<br>
-	  					<input  type="submit">
+	  					<button onClick= "q4_thuannghich()" type="button">Proces</button>
   					</form>
-  						
-  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex4-output"></textarea>
+  						<textarea autocomplete=off disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex4-output"></textarea>
 			      </div>
 			    </div>
 			  </div>
 
+			  <!--5-->
 			  <div class="panel panel-default">
 			    <div class="panel-heading">
 			      <h4 class="panel-title">
@@ -270,17 +274,18 @@
 					</table>
 					<p> Hình vẽ giải thích test </p>
 					<img src="5.jpg">
-					<form onSubmit= "q5_SadValentine()">
-				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex5-input"></textarea>
+					<form>
+				      	<textarea autocomplete=off class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex5-input"></textarea>
 	  					<br>
-	  					<input  type="submit">
+	  					<button  onClick= "q5_SadValentine()" type="button">Proces</button>
   					</form>
   						
-  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex5-output"></textarea>
+  						<textarea autocomplete=off disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex5-output"></textarea>
 			      </div>
 			    </div>
 			  </div>
 
+			  <!--6-->
 			  <div class="panel panel-default">
 			    <div class="panel-heading">
 			      <h4 class="panel-title">
@@ -313,16 +318,225 @@
 						    <td>7 7</td> 
 						  </tr>
 					</table>
-					<form onSubmit= "q4_thuannghich()">
-				      	<textarea class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex4-input"></textarea>
+					<form >
+				      	<textarea autocomplete=off class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex6-input"></textarea>
 	  					<br>
-	  					<input  type="submit">
+	  					<button onClick= "q6_TeosCandy()"  type="button">Proces</button>
   					</form>
   						
-  						<textarea disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex4-output"></textarea>
+  						<textarea autocomplete=off disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex6-output"></textarea>
 			      </div>
 			    </div>
 			  </div>
+
+			  <!--7-->
+			  <div class="panel panel-default">			  	
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+			        <b>Bài 7: Lặp lại các kí tự</b></a>
+			      </h4>
+			    </div>
+			    <div id="collapse7" class="panel-collapse collapse">
+			      <div class="panel-body">
+			      	<div>
+			      		<p>Với một xâu ký tự S, và một số nguyên R, hãy tạo ra một xâu T bằng cách mỗi ký tự trong S được lặp lại R lần.
+							Các ký tự trong S có thể nằm trong dãy:</p>
+						<p class="indent-text">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ$%*+-./:</p>
+						<p>Input </p>
+						<p class="indent-text"> Dòng 1 ghi số bộ test (không quá 1000)</p>
+						<p class="indent-text"> Mỗi bộ test gồm số thứ tự, một dấu cách, tiếp theo là số 1<=R<=8, một dấu cách, rồi đến xâu ký tự S (không
+							quá 20 ký tự).
+						</p>
+						
+						<p>Output </p>
+						<p class="indent-text"> Với mỗi bộ test ghi trên một dòng số thứ tự bộ test, một dấu cách rồi đến xâu T.</p>
+						<p>VD:</p>
+						<table style="width:100%">
+						  <tr>
+						    <th>Input</th>
+						    <th>Output</th> 
+					
+						  </tr>
+						  <tr>
+						    <td>1 3 ABC</td>
+						    <td>1 AABBBCCC</td>						
+						  </tr>
+						  <tr>
+						    <td>2 5 /HTP</td>
+						    <td>2 /////HHHHHTTTTTPPPPP</td> 
+						  </tr>
+
+						</table>
+			      	</div>
+					
+					<form>
+				      	<textarea autocomplete=off class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex7-input"></textarea>
+	  					<br>
+	  					<button  onClick= "q7_loopChar()" type="button">Proces</button>
+  					</form>
+  						
+  						<textarea autocomplete=off disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex7-output"></textarea>
+
+			      </div>
+			    </div>
+			  </div>
+
+			  <!--8-->
+			  <div class="panel panel-default">			  	
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+			        <b>Bài 8: M O O</b></a>
+			      </h4>
+			    </div>
+			    <div id="collapse8" class="panel-collapse collapse">
+			      <div class="panel-body">
+			      	<div>
+			      		<p>Những con bò đang chuẩn bị bắt đầu chơi trò “Moo”. Chúng đứng trên một hàng dài, trong đó mỗi con bò trong
+							hàng sẽ nói một chữ cái nhanh nhất có thể. Con bò nào phạm luật đầu tiên thì sẽ thua.</p>
+						<p>Dãy các kí tự “Moo” có thể kéo dài liên tục và không giới hạn. Chúng sẽ bắt đầu như sau:</p>
+						<p class="indent-text"> m o o m o o o m o o m o o o o m o o m o o o m o o m o o o o</p>
+						<p>Dãy kí tự được diễn tả như sau: Gọi S(0)là một trong ba kí tự “m o o”. Sau đó dãy kí tự S(k)sẽ bằng dãy S(k-1)
+							và thêm vào “m o ... o” với k+2 chữ o, và sau đó cộng thêm một lần cho S(k-1). Ví dụ:</p>
+						<p class="indent-text">S(0) = "m o o"</p>
+						<p class="indent-text">S(1) = "m o o m o o o m o o"</p>
+						<p class="indent-text">S(2) = "m o o m o o o m o o m o o o o m o o m o o o m o o"</p>
+						<p>Với cách này sẽ tạo được dãy kí tự rất dài, và dãy này sẽ dùng cho game Moo.</p>	
+						<p>Cô bò Bessie muốn biết kí tự thứ N của dãy này là chữ “m” hay chữ “o”. Bạn hãy giúp Bessie nhé!</p>
+						<p>Input </p>
+						<p class="indent-text">*Dòng 1: Gồm một số nguyên N(1 <= N <= 10^9).</p>
+						<p class="indent-text"> Dòng duy nhất chứa kí tự “m” hoặc “o”</p>
+						
+						<p>Output </p>
+						<p class="indent-text"> Với mỗi bộ test ghi trên một dòng số thứ tự bộ test, một dấu cách rồi đến xâu T.</p>
+						<p>VD:</p>
+						<table style="width:100%">
+						  <tr>
+						    <th>Input</th>
+						    <th>Output</th> 
+					
+						  </tr>
+						  <tr>
+						    <td>11</td>
+						    <td>3</td>						
+						  </tr>
+						</table>
+			      	</div>
+					
+					<form>
+				      	<textarea autocomplete=off class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex8-input"></textarea>
+	  					<br>
+	  					<button  onClick= "q8_CountCow()"  type="button">Proces</button>
+  					</form>
+  						
+  						<textarea autocomplete=off disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex8-output"></textarea>
+
+			      </div>
+			    </div>
+			  </div>
+
+			  <!--9-->
+			  <div class="panel panel-default">			  	
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+			        <b>Bài 9: Số gần nguyên tố</b></a>
+			      </h4>
+			    </div>
+			    <div id="collapse9" class="panel-collapse collapse">
+			      <div class="panel-body">
+			      	<div>
+			      		<p>Chúng ta đều biết số nguyên tố là số nguyên dương mà chỉ có duy nhất 2 ước phân biệt. Iron man luôn thích
+							những cái đặc biệt và mới mẻ, và anh ra đưa ra 1 định nghĩa mới “Số gần nguyên tố” – là các số nguyên
+							dương mà có đúng 3 ước phân biệt.</p>
+						<p>Bạn được cho 1 mảng có n phần tử, hãy kiểm tra xem từng phần tử trong mảng có phải là số gần nguyên tố
+							hay không.</p>
+						<p>Input </p>
+						<p class="indent-text">Dòng đầu tiên nhập vào số tự nhiên n (1 <= n <= 10^5) là số phần tử của mảng.</p>
+						<p class="indent-text"> Dòng tiếp theo nhập n số nguyên dương x[i] (1 <= x[i] <= 10^12)</p>
+						
+						<p>Output </p>
+						<p class="indent-text"> In ra trên n dòng: dòng thứ i in “YES” nếu x[i] là số gần nguyên tố, ngược lại thì in “NO”.</p>
+						<p>VD:</p>
+						<table style="width:100%">
+						  <tr>
+						    <th>Input</th>
+						    <th>Output</th> 
+					
+						  </tr>
+						  <tr>
+						    <td valign="top">4   5   6</td>
+							<td><p>YES</p>
+								<p>NO</p>
+								<p>NO</p></td>						
+						  </tr>
+						  
+						</table>
+			      	</div>
+					
+					<form>
+				      	<textarea autocomplete=off class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex9-input"></textarea>
+	  					<br>
+	  					<button  onClick= "q9_NearPrime()" type="button">Proces</button>
+  					</form>
+  						
+  						<textarea autocomplete=off disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex9-output"></textarea>
+
+			      </div>
+			    </div>
+			  </div>
+
+			  <!--10-->
+			  <div class="panel panel-default">			  	
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+			        <b>Bài 10: Tính sát thương</b></a>
+			      </h4>
+			    </div>
+			    <div id="collapse10" class="panel-collapse collapse">
+			      <div class="panel-body">
+			      	<div>
+			      		<p>Ursa là một hero rất bá đạo trong DotA, anh có kỹ năng gia tăng sức mạnh sau mỗi cú đánh theo công thức:</p>
+						<p class="indent-text">D[i] = D[i-1] + i với i là số thứ tự cú đánh và D i là lượng sát thương gây ra sau cú đánh đó, với i = 1 thì D[i] = 1.</p>
+						<p>Thanh mới tập chơi DotA và chơi một hero có lượng máu cơ bản là X. Hero của Thanh không chịu được
+							đòn đánh có sát thương lớn hơn X. </p>
+							<p>Bạn hãy giúp Thanh tính xem có thể chịu được tối đa bao nhiêu cú đánh
+							của Ursa.</p>
+						<p>Input </p>
+						<p class="indent-text"> Dòng duy nhất chứa số X (1 <= X <= 10000).</p>
+						
+						<p>Output </p>
+						<p class="indent-text"> In ra số cú đánh tối đa mà hero của Thanh có thể chịu được.</p>
+						<p>VD:</p>
+						<table style="width:100%">
+						  <tr>
+						    <th>Input</th>
+						    <th>Output</th> 
+					
+						  </tr>
+						  <tr>
+						    <td>1</td>
+							<td>1</td>					
+						  </tr>
+						  
+						</table>
+			      	</div>
+					
+					<form>
+				      	<textarea autocomplete=off class="mt-5"name="message" rows="10" cols="156" placeholder="Input here" id="ex10-input"></textarea>
+	  					<br>
+	  					<button  onClick= "q10_UrsaDota()"  type="button">Proces</button>
+  					</form>
+  						
+  						<textarea autocomplete=off disabled="true" class="mt-5"name="message" rows="10" cols="156" id="ex10-output"></textarea>
+
+			      </div>
+			    </div>
+			  </div>
+
+
 			</div>
 			</div>
 
